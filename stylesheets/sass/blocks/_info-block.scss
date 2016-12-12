@@ -1,0 +1,133 @@
+.info-block {
+  @include clearfix();
+
+  &__title {
+    position: relative;
+    color: #484848;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 24px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px;
+      background-color: $line-red;
+      width: 100%;
+      height: 2px;
+      left: 0px;
+      bottom: -8px;
+    }
+  }
+
+  .wrapper {
+    .left-column {
+      float: left;
+      width: 25%;
+      margin-top: 141px;
+      margin-right: 40px;
+
+      .conten-block2 {
+        margin-bottom: 15px;
+      }
+
+      .conten-block3 {
+        margin-bottom: 20px;
+      }
+
+      .content-block {
+        position: relative;
+        text-align: center;
+
+
+        &__info-img {
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+
+        &__title {
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+            display: inline-block;
+            font-family: PTSans;
+            margin-bottom: 5px;
+
+          }
+
+          &__desc {
+            position: relative;
+            margin: 0;
+            color: $info-block-text;
+            font-family: "PTSerif";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-left: 27px;
+            width: 84%;
+            margin-bottom: 18px;
+            max-height: 65px;
+            overflow: hidden;
+          }
+
+          &__delimeter {
+            width: 80%;
+            border-bottom: 3px solid #487896;
+            margin: 0 auto;
+            margin-bottom: 13px;
+          }
+
+          // &:after {
+          //   position: absolute;
+          //   content: "";
+          //   width: 104%;
+          //   height: 2px;
+          //   opacity: 0.3;
+          //   background-color: #487896;
+          //   top: 80px;
+          //   left: -4px;
+          //
+          // }
+      }
+    }
+
+    .right-column {
+      float: right;
+      width: 70%;
+      margin-top: 74px;
+      margin-bottom: 60px;
+
+      .info-block-text {
+        color: $info-block-text;
+        font-family: "PTSerif";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 69px;
+      }
+
+
+
+    }
+  }
+
+  &_group {
+    .group__title {
+      color: #f55858;
+      font-family: "PTSans";
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .group-text {
+      color: $info-block-text;
+      font-family: "P T Serif";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+}

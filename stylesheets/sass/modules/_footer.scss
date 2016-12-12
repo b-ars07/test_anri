@@ -1,0 +1,158 @@
+footer {
+  @include clearfix();
+  width: 100%;
+  background: url('../../img/bg-footer.png');
+  background-position: -255px 515px;
+  height: 515px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+
+  .left-block {
+    position: absolute;
+    bottom: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 260px;
+  }
+
+  .center-block {
+    display: inline-block;
+    max-width: 480px;
+    text-align: center;
+
+
+    .register-form {
+      position: relative;
+      display: inline-block;
+      vertical-align: baseline;
+      left: 365px;
+      margin-top: 15px;
+
+      p {
+        color: #ecf0f1;
+         font-family: "PTSans";
+         font-size: 30px;
+         font-weight: 700;
+      }
+
+      label {
+        display: block;
+        text-align: left;
+        color: #d5d5d5;
+        font-family: "PTSans";
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+
+      input {
+        display: block;
+        text-align: left;
+        margin-bottom: 25px;
+        width: 412px;
+        padding: 15px 13px;
+        color: white;
+        background: rgba(#f64747, 0.32);
+        outline: none;
+        border: 1px solid #c54444;
+
+        &:focus {
+          background: rgba(#f64747, 0.76);
+        }
+
+
+      }
+
+      button[type="submit"] {
+        color: white;
+        font-family: "PTSans";
+        font-size: 18px;
+        font-weight: 400;
+        padding: 12px 44px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right-block {
+    position: absolute;
+    bottom: 75px;
+    right: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 260px;
+  }
+}
+
+.footer {
+  position: relative;
+  &__info span {
+    display: block;
+    color: $text-white;
+    font-family: "PTSans";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__contacts {
+    float: right;
+    margin-top: 30px;
+    margin-right: 17px;
+
+    .phone {
+      position: relative;
+      margin-bottom: 10px;
+
+      &__number {
+        color: $text-white;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        top: -2px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url('../../img/phone.svg');
+        top: 0px;
+        left: -26px;
+        width: 16px;
+        height: 17px;
+        background-size: 18px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .email {
+      position: relative;
+      &__text {
+        color: $text-white;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        top: -2px;
+        left: 4px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url('../../img/envelope.svg');
+        top: -6px;
+        left: -26px;
+        width: 19px;
+        height: 17px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

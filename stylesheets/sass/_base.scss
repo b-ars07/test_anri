@@ -1,0 +1,40 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: $bg-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+a,
+span,
+div,
+b,
+strong,
+mark,
+small,
+input,
+label,
+textarea,
+h1,h2,h3,h4,h5,h6,
+&:after,
+&:before,
+&::after,
+&::before{
+	font-family:"PTSans", "PTSerif", "HelveticaNeueCyr", 'Arial', 'sans-serif';
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
