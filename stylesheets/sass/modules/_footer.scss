@@ -34,7 +34,7 @@ footer {
 
       p {
         color: #ecf0f1;
-         font-family: "PTSans";
+         font-family: "PTSans", sans-serif;
          font-size: 30px;
          font-weight: 700;
       }
@@ -43,7 +43,7 @@ footer {
         display: block;
         text-align: left;
         color: #d5d5d5;
-        font-family: "PTSans";
+        font-family: "PTSans", sans-serif;
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 8px;
@@ -69,7 +69,7 @@ footer {
 
       button[type="submit"] {
         color: white;
-        font-family: "PTSans";
+        font-family: "PTSans", sans-serif;
         font-size: 18px;
         font-weight: 400;
         padding: 12px 44px;
@@ -94,7 +94,7 @@ footer {
   &__info span {
     display: block;
     color: $text-white;
-    font-family: "PTSans";
+    font-family: "PTSans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -112,6 +112,7 @@ footer {
       &__number {
         color: $text-white;
         font-size: 14px;
+        font-family: "PTSans", sans-serif;
         font-weight: 400;
         position: relative;
         top: -2px;
@@ -135,6 +136,7 @@ footer {
       &__text {
         color: $text-white;
         font-size: 16px;
+        font-family: "PTSans", sans-serif;
         font-weight: 400;
         position: absolute;
         top: -2px;
