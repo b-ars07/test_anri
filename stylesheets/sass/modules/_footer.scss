@@ -13,11 +13,11 @@ footer {
   height: 100%;
 
   .left-block {
-    position: absolute;
-    bottom: 50px;
+    position: relative;
+    bottom: -100px;
     display: inline-block;
     vertical-align: middle;
-    max-width: 260px;
+    width: 31.5%;
   }
 
   .center-block {
@@ -30,7 +30,6 @@ footer {
       position: relative;
       display: inline-block;
       vertical-align: baseline;
-      left: 365px;
       margin-top: 15px;
 
       p {
