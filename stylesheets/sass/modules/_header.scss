@@ -88,6 +88,8 @@ header {
       line-height: 65px;
       margin-bottom: 42px;
       font-family: "PTSans", sans-serif;
+      max-height: 255px;
+      overflow: hidden;
     }
 
     a {
