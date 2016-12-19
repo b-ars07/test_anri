@@ -31,9 +31,9 @@ gulp.task('sass', function(){
 });
 
 gulp.task('jade', function(){
-  gulp.src('./jade/**/*[^_].jade')
+  gulp.src('../jade/*.jade')
   .pipe(jade())
-  .pipe(gulp.dest('./html/'))
+  .pipe(gulp.dest('../html/'))
   .pipe(connect.reload())
 });
 
